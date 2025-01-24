@@ -3,12 +3,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from pages.base_page import BasePage
-from pages.main_page import MainPage
 
 
 class OrderPage(BasePage):
-
-    order_page_url = MainPage.main_page_url + '/order'
 
     #форма заполнения информации о пользователе
     first_name_field = [By.XPATH, ".//input[@placeholder='* Имя']"]

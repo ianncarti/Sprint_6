@@ -10,7 +10,6 @@ class ValidOrderInfo:
     user_phone_numbers = ['+7981696969', '+79813321516']
     metro_stations = ['Лубянка', 'Чистые Пруды']
     rent_dates = [OrderPage.rent_day_second_last_date_in_datepicker, OrderPage.rent_day_second_last_date_in_datepicker]
-    #rent_dates = ['01.02.2025', '16.01.2026']
     rent_durations = [OrderPage.rent_duration_1_day, OrderPage.rent_duration_5_days]
     vehicle_colors = [OrderPage.color_black, OrderPage.color_grey]
     comments_for_order = ['Как можно быстрее', 'Можно не торопиться']

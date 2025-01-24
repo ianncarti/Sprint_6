@@ -2,8 +2,8 @@ import pytest
 import allure
 from selenium import webdriver
 from data import ValidOrderInfo
-from pages.main_page import MainPage
 from pages.order_page import OrderPage
+from urls import PagesUrls
 
 
 class TestOrderPage:
@@ -32,7 +32,7 @@ class TestOrderPage:
     )
     def test_order_with_valid_info(self, order_button, name, sure_name, address, phone, metro, rent_date, rent_duration, vehicle_color, comment):
         order_page = OrderPage(self.driver)
-        order_page.open_url(MainPage.main_page_url)
+        order_page.open_url(PagesUrls.main_page_url)
         order_page.click_order_button(order_button)
         order_page.fill_user_info(name, sure_name, address, phone, metro)
         order_page.fill_rent_info(rent_date, rent_duration, vehicle_color, comment)
